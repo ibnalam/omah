@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===========================================
+        Navbar Section Start Here 
+============================================== */
+
+.navbar {
+    background: #EEEDDE;
+}
+
+.logo {
+
+}
+
+.navbar ul li {
+    margin-left: 100px;
+    position: relative;
+}
+
+.navbar ul li a{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #203239;
+    transition: .4s;
+    position: relative;
+}
+
+.navbar ul li a i {
+    transition: .4s;
+}
+
+.navbar ul li a::after {
+    content: "";
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    background: #F6762E;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 4px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .2s;
+}
+
+.navbar ul li .dropdown {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: #EEEDDE;
+    transform: rotateX(90deg);
+    transform-origin: top;
+    transition: .4s;
+}
+
+
+.navbar ul li .dropdown ul li {
+    margin-left: 0;
+    border-bottom: 1px solid #F6762E;
+    padding: 8px 20px;
+}
+
+.navbar ul li a:hover:after {
+    opacity: 1;
+}
+
+
+.navbar ul li a:hover {
+    font-weight: 600;
+}
+
+.navbar ul li a:hover i {
+    transform: rotate(177deg);
+}
+
+.navbar ul li:hover .dropdown {
+    transform: rotateX(0deg);
+}
+
+
+/* ===========================================
+        Navbar Section End Here 
+============================================== */
+
+
+
+/* ===========================================
+        banner Section starts Here 
+============================================== */
+
+#banner-part {
+    background: #EEEDDE;
+}
+
+#banner-part h1 {
+    margin-top: 100px;
+    margin-bottom: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #203239;
+    line-height: 150%;
+}
+
+#banner-part p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #203239;
+    line-height: 30px;
+    width: 544px;
+}
+
+#banner-part .search input {
+    padding: 23px 0 23px 56px;
+    border-radius: 9px;
+    border: 1px solid #fff;
+    width: 100%;
+}
+
+#banner-part .search {
+    margin-top: 56px;
+    position: relative;
+    width: 675px;
+}
+
+#banner-part .search input::placeholder {
+    color: rgba(32, 50, 57.55);
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+#banner-part .search i {
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+}
+
+#banner-part .search button{
+    background: #203239;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    padding: 13px 41px;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    -webkit-box-shadow: 0px 0px 16px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 16px 1px rgba(0,0,0,1);
+    box-shadow: 0px 0px 16px 1px rgba(0,0,0,1);
+}
+
+
+#banner-part .box {
+    display: flex;
+    margin: 62px 0;
+    width: 640px;
+}
+
+
+#banner-part .box .item {
+    /* margin-top: 62px; */
+    margin-right: 62px;
+    width: 30%;
+    /* height: 300px; */
+    background: #EEEDDE;
+}
+
+
+#banner-part .box .item h2 {
+    color: #203239;
+    font-size: 56px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#banner-part .box .item h2 span {
+    color: #F6762E;
+}
+
+#banner-part .box .item p {
+    width: auto;
+}
+
+
+/* ===========================================
+        Banner Section End Here 
+============================================== */
+
+/* ===========================================
+        property  Section starts Here 
+============================================== */
+
+#property-part {
+    margin-top: 100px;
+}
+
+#property-part h2 {
+    color: #203239;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    width: 533px;
+    line-height: 150%;
+}
+
+#property-part .item {
+    width: 300px;
+    height: 300px;
+    margin-top: 64px;
+    border: 1px solid transparent;
+    padding: 30px;
+    transition: .4s;
+}
+
+
+#property-part .item:hover {
+    border-color: #F6762E;
+}
+
+#property-part .item h3 {
+    color: #203239;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+#property-part .item h3 span {
+    color: #F6762E;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+#property-part .item h3::after {
+    content: "";
+    width: 8px;
+    height: 30px;
+    background: #F6762E;
+    border-radius: 5px;
+    position: absolute;
+    top: -5px;
+    left: -31px;
+}
+
+
+#property-part .item p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: rgba(32, 50, 57.55);
+    line-height: 30px;
+    margin-top: 24px;
+}
+
+#property-part .item a {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-top: 50px;
+    color: #203239;
+    padding-left: 6px;
+    position: relative;
+}
+
+
+#property-part .item a::after {
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: #EEEDDE;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: -1;
+    transition: .4s;
+}
+
+
+#property-part .item a:hover::after{
+    width: 105%;
+}
+
+#property-part .item a i {
+    /* padding-left: ; */
+    margin-left: 14px;
+}
+
+
+
+/* ===========================================
+        property  Section End Here 
+============================================== */
+
+
+/* ===========================================
+        resident  Section start Here 
+============================================== */
+
+#resident-part {
+    background: #EEEDDE;
+    margin-top: 100px;
+    padding: 68px 0;
+    padding-bottom: 161px;
+}
+
+#resident-part .title p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #F6762E;
+}
+
+#resident-part .title h3 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #203239;
+    margin-top: 8px;
+}
+
+#resident-part .row .img{
+    position: relative;
+}
+
+#resident-part .row .img .front-img {
+    position: absolute;
+    top: 60px;
+    left: 167px;
+}
+
+#resident-part .h2 {
+      font-size: 36px;
+      width: 507px;
+      line-height: 150%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #203239;
+}
+
+#resident-part .p2 {
+    margin-top: 24px;
+    font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: #203239;
+}
+
+
+#resident-part a {
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #203239;
+  padding: 13px 41px 13px 77px;
+  border: 1px solid #203239;
+  color: #203239;
+  border-radius: 7px;
+  position: relative;
+  transition: .4s;
+  margin-right: 48px;
+}
+
+#resident-part .a2 {
+    padding-left: 41px;
+}
+
+#resident-part a:hover {
+    color: #F6762E;
+    background: #203239;
+}
+
+#resident-part a i {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+}
+
+
+
+
+/* ===========================================
+        resident  Section End Here 
+============================================== */
+
+/* ===========================================
+        kota  Section starts Here 
+============================================== */
+
+#kota-part {
+    margin-top: 68px;
+    /* padding-bottom: 161px; */
+}
+
+#kota-part .title p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #F6762E;
+}
+
+#kota-part .title h3 {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #203239;
+    margin-top: 8px;
+}
+
+#kota-part .icon i {
+    margin-top: 37px;
+    margin-right: 25px;
+    color: #F6762E;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #D6D5C7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#kota-part .icon i:hover {
+    background: #D6D5C7;
+    opacity: .3;
+    /* color: #F6762E; */
+}
+
+
+#kota-part img {
+    width: 100%;
+    margin-top: 64px;
+}
+
+#kota-part h3 {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #203239;
+    margin: 25px 0;
+}
+
+#kota-part p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #203239;
+    /* margin: 25px 0; */
+}
+
+
+
+
+/* ===========================================
+       kota Section End Here 
+============================================== */
+
+/* ===========================================
+       kami  Section starts Here 
+============================================== */
+
+
+#kami-part {
+    margin-top: 100px;
+    padding-top: 48px;
+    background: #EEEDDE;
+}
+
+#kami-part .title {
+    display: flex;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #203239;
+
+}
+
+
+#kami-part .title h2 {
+    margin-right: 505px;
+}
+
+
+#kami-part .item {
+    position: relative;
+    width: 306px;
+    height: 178px;
+    margin-right: 64px;
+    margin-top: 63px;
+    margin-bottom: 64px;
+    border: 1px solid #F6762E;
+    padding: 24px;
+    transition: .4s;
+    border-radius: 10px;
+}
+
+#kami-part .item .icon {
+    position: relative;
+}
+
+
+#kami-part .item .icon i {
+    position: absolute;
+    font-size: 30px;
+    margin-top: 12px;
+    color: #203239;
+}
+
+
+#kami-part .item h6 {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #203239;
+    margin-left: 48px;
+    margin-bottom: -6px;
+}
+
+#kami-part .item p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #203239;
+    margin-top: 8px;
+    margin-left: 48px;
+}
+
+
+#kami-part .item a {
+    margin-left: 10px;
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #203239;
+  padding: 13px 61px;
+  border: 1px solid #203239;
+  color: #203239;
+  border-radius: 7px;
+  position: absolute;
+  transition: .4s;
+  margin-right: 48px;
+}
+
+#kami-part .item a:hover {
+    background: #F6762E;
+    color: #fff;
+}
+
+#kami-part img {
+
+    margin-top: 64px;
+}
+
+
+#kami-part .img1 img {
+    margin-left: 30px;
+}
+#kami-part .img2 img {
+    margin-left: -25px;
+    margin-top: 40px !important;
+}
+
+
+
+
+/* ===========================================
+      kami  Section End Here 
+============================================== */
+
+
+/* ===========================================
+      footer Section starts Here 
+============================================== */
+
+#footer-part {
+    /* margin-top: 48px; */
+    background: #203239;
+}
+
+#footer-part h2 {
+    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+
+#footer-part i {
+    font-size: 30px;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 105px;
+    /* justify-content: flex-end; */
+}
+
+
+
+
+
+
+/* ===========================================
+      footer Section End Here 
+============================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
